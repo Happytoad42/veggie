@@ -1,2 +1,2 @@
 # veggie
-Sumple adaptive website
+Simple adaptive website
