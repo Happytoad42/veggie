@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/Happytoad42/veggie/issues"
   },
-  "homepage": "https://github.com/Happytoad42/veggie#readme"
+  "homepage": "https://github.com/Happytoad42/veggie#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.1",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-webp": "^3.0.0"
+  }
 }
