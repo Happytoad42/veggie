@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Veggie</title>
-	<link rel="stylesheet" href="build/styles/main-min.css">
+    <meta charset="UTF-8">
+    <title>Veggie</title>
+    <link rel="stylesheet" href="build/styles/main-min.css">
 </head>
+
 <body>
-	<h1>Hello, world!</h1>
-	
+    <h1>Hello, world!</h1>
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul compact="main-nav__list">
+                    <li class="main-nav__item main-nav__item--active">Home</li>
+                    <li class="main-nav__item">Specials</li>
+                    <li class="main-nav__item">About</li>
+                    <li class="main-nav__item">Menu</li>
+                    <li class="main-nav__item">Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="main-header__title title">Veggies es bonus vobis, proinde vos postulo essum.</h1>
+    </header>
+    <main class="page-main">
+    	<section class="page-main__features">
+    		<div class="features__item features__item--turnip">
+    			<img src="#" alt="some image">
+    			<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+    		</div>
+    		<div class="features__item features__item--beetroot">
+    			<img src="#" alt="some image">
+    			<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+    		</div>
+    		<div class="features__item features__item--social">
+    			<img src="#" alt="some image">
+    			<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+    		</div>
+    	</section>
+    	<section class="page-main__specials">
+    		<h1 class="specials__title tittle">This month specials</h1>
+    		<ul class="specials__list">
+    			<li class="specials__item">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Greens fava</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">17$</p>
+    				</div>
+    			</li>
+    			<li class="specials__item">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Celery quandong</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">30$</p>
+    				</div>
+    			</li>
+    			<li class="specials__item">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Pea horseradish</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">25$</p>
+    				</div>
+    			</li>
+    			<li class="specials__item specials__item--flipped">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Soko radicchio</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">7$</p>
+    				</div>
+    			</li>
+    			<li class="specials__item specials__item--flipped">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Tigernut</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">3$</p>
+    				</div>
+    			</li>
+    			<li class="specials__item specials__item--flipped">
+    				<div class="specials__image">
+    					<img src="#" alt="Specials photo">
+    				</div>
+    				<div class="specials__text">
+    					<h6 class="specials__text--tittle">Yarrow sweet</h6>
+    					<p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+    					<p class="specials__text--price">5$</p>
+    				</div>
+    			</li>
+    		</ul>
+    	</section>
+    	<section class="page-main__about">
+    		<div class="about__wrapper">
+    			<div class="about__text">
+    				<h2 class="about__tittle tittle">About us</h1>
+    				<p class="about__text">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+    				<img src="#" alt="Hand-written signature" class="about__signature">
+    			</div>
+    			<div class="about__image-wrapper">
+    				<img src="#" alt="Some bowl" class="about__image">
+    			</div>
+    		</div>
+    	</section>
+    	<section class="page-main__menu">
+    		<div class="menu__wrapper">
+    			<h2 class="menu__tittle tittle">Menu</h2>
+    			<div class="menu__nav-list">
+    				<input type="radio" id="menuLabel1" name="menu" value="starters">
+    				<label for="menuLabel1">Starters</label>
+    				<input type="radio" id="menuLabel2" name="menu" value="mainDishes">
+    				<label for="menuLabel2">Main Dishes</label>
+    				<input type="radio" id="menuLabel3" name="menu" value="desserts">
+    				<label for="menuLabel3">Desserts</label>
+    				<input type="radio" id="menuLabel4" name="menu" value="drinks">
+    				<label for="menuLabel4">Drinks</label>
+    			</div>
+    		</div>
+    	</section>
+    	
+    </main>
 </body>
+
 </html>
