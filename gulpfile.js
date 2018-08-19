@@ -14,7 +14,7 @@ var run = require("gulp-run");
 var server = require("browser-sync").create();
  
 gulp.task("style", function () {
-		gulp.src("dev/sass/*.sass")
+		gulp.src("dev/sass/**/*.sass")
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(postcss([
@@ -32,7 +32,7 @@ gulp.task("serve", function () {
 		server: "./build"
 	});
 
-	gulp.watch("dev/sass/*.sass", ["style"]);
+	gulp.watch("dev/sass/**/*.sass", ["style"]);
 	gulp.watch("dev/*.html", ["html"])
 		.on("change", server.reload);
 
