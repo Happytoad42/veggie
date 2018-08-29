@@ -12,38 +12,37 @@
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item main-nav__item--active">Home</li>
-                    <li class="main-nav__item">Specials</li>
-                    <li class="main-nav__item">About</li>
-                    <li class="main-nav__item">Menu</li>
-                    <li class="main-nav__item">Contact</li>
+                    <li class="main-nav__item main-nav__item--active"><a href="#">Home</a></li>
+                    <li class="main-nav__item"><a href="#">Specials</a></li>
+                    <li class="main-nav__item"><a href="#">About</a></li>
+                    <li class="main-nav__item"><a href="#">Menu</a></li>
+                    <li class="main-nav__item"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <h1 class="main-header__title title">Veggies es bonus vobis, proinde vos postulo essum.</h1>
+        <h1 class="main-header__title title">Veggies es bonus vobis,<br> proinde vos postulo essum.</h1>
     </header>
     <main class="page-main">
         <section class="page-main__features">
             <h2 class="visually-hidden">Our features</h2>
-            <div class="features__item features__item--turnip">
-                <img src="#" alt="some image">
-                <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
-            </div>
-            <div class="features__item features__item--beetroot">
-                <img src="#" alt="some image">
-                <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
-            </div>
-            <div class="features__item features__item--social">
-                <img src="#" alt="some image">
-                <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
-            </div>
+            <ul class="features__list">
+                <li class="features__item features__item--turnip">
+                    <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+                </li>
+                <li class="features__item features__item--beetroot">
+                    <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                </li>
+                <li class="features__item features__item--social">
+                    <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisc. Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                </li>
+            </ul>
         </section>
-        <section class="page-main__specials">
-            <h2 class="specials__title tittle">This month specials</h2>
+        <section id="specials" class="page-main__specials">
+            <h2 class="specials__tittle tittle">This month specials</h2>
             <ul class="specials__list">
                 <li class="specials__item">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Greens fava</h6>
@@ -53,7 +52,7 @@
                 </li>
                 <li class="specials__item">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Celery quandong</h6>
@@ -63,7 +62,7 @@
                 </li>
                 <li class="specials__item">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Pea horseradish</h6>
@@ -73,7 +72,7 @@
                 </li>
                 <li class="specials__item specials__item--flipped">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Soko radicchio</h6>
@@ -83,7 +82,7 @@
                 </li>
                 <li class="specials__item specials__item--flipped">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Tigernut</h6>
@@ -93,7 +92,7 @@
                 </li>
                 <li class="specials__item specials__item--flipped">
                     <div class="specials__image">
-                        <img src="#" alt="Specials photo">
+                        <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
                         <h6 class="specials__text--tittle">Yarrow sweet</h6>
@@ -107,102 +106,99 @@
             <div class="about__wrapper">
                 <div class="about__text">
                     <h2 class="about__tittle tittle">About us</h2>
-                    <p class="about__text">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                    <p class="about__description">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <img src="#" alt="Hand-written signature" class="about__signature">
-                </div>
-                <div class="about__image-wrapper">
-                    <img src="#" alt="Some bowl" class="about__image">
                 </div>
             </div>
         </section>
         <section class="page-main__menu">
-            <div class="menu__wrapper">
-                <h2 class="menu__tittle tittle">Menu</h2>
-                <div class="menu__nav-list">
-                    <input type="radio" id="menuLabel1" name="menu" value="starters">
-                    <label for="menuLabel1">Starters</label>
-                    <input type="radio" id="menuLabel2" name="menu" value="mainDishes">
-                    <label for="menuLabel2">Main Dishes</label>
-                    <input type="radio" id="menuLabel3" name="menu" value="desserts">
-                    <label for="menuLabel3">Desserts</label>
-                    <input type="radio" id="menuLabel4" name="menu" value="drinks">
-                    <label for="menuLabel4">Drinks</label>
-                </div>
+            <h2 class="menu__tittle tittle">Menu</h2>
+            <div class="menu__nav-list">
+                <input type="radio" id="menuLabel1" name="menu" value="starters">
+                <label for="menuLabel1">Starters</label>
+                <input type="radio" id="menuLabel2" name="menu" value="mainDishes">
+                <label for="menuLabel2">Main Dishes</label>
+                <input type="radio" id="menuLabel3" name="menu" value="desserts">
+                <label for="menuLabel3">Desserts</label>
+                <input type="radio" id="menuLabel4" name="menu" value="drinks">
+                <label for="menuLabel4">Drinks</label>
             </div>
-            <ul class="menu__column menu__column--right">
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-            </ul>
-            <ul class="menu__column menu__column--left">
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-                <li class="menu__dish">
-                    <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
-                    <p class="dish__price">20$</p>
-                    <p class="dish__ingridients">some ingridients</p>
-                </li>
-            </ul>
+            <div class="menu__wrapper">
+                <ul class="menu__column menu__column--right">
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                </ul>
+                <ul class="menu__column menu__column--left">
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                    <li class="menu__dish">
+                        <p class="dish__name">Some dish name here</p><span class="dish__dots"></span>
+                        <p class="dish__price">20$</p>
+                        <p class="dish__ingridients">some ingridients</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="page-main__contacts">
             <div class="contacts__wrapper">
