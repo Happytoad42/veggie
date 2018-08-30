@@ -10,15 +10,13 @@
 <body>
     <header class="page-header">
         <nav class="main-nav">
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item main-nav__item--active"><a href="#">Home</a></li>
-                    <li class="main-nav__item"><a href="#">Specials</a></li>
-                    <li class="main-nav__item"><a href="#">About</a></li>
-                    <li class="main-nav__item"><a href="#">Menu</a></li>
-                    <li class="main-nav__item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
+            <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Home</a></li>
+                <li class="main-nav__item main-nav__item"><a class="main-nav__link" href="#">Specials</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Menu</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+            </ul>
         </nav>
         <h1 class="main-header__title title">Veggies es bonus vobis,<br> proinde vos postulo essum.</h1>
     </header>
@@ -38,14 +36,14 @@
             </ul>
         </section>
         <section id="specials" class="page-main__specials">
-            <h2 class="specials__tittle tittle">This month specials</h2>
+            <h2 class="specials__title title">This month specials</h2>
             <ul class="specials__list">
                 <li class="specials__item">
                     <div class="specials__image">
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Greens fava</h6>
+                        <h6 class="specials__text--title">Greens fava</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">17$</p>
                     </div>
@@ -55,7 +53,7 @@
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Celery quandong</h6>
+                        <h6 class="specials__text--title">Celery quandong</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">30$</p>
                     </div>
@@ -65,7 +63,7 @@
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Pea horseradish</h6>
+                        <h6 class="specials__text--title">Pea horseradish</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">25$</p>
                     </div>
@@ -75,7 +73,7 @@
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Soko radicchio</h6>
+                        <h6 class="specials__text--title">Soko radicchio</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">7$</p>
                     </div>
@@ -85,7 +83,7 @@
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Tigernut</h6>
+                        <h6 class="specials__text--title">Tigernut</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">3$</p>
                     </div>
@@ -95,7 +93,7 @@
                         <img src="../img/food.jpg" alt="Specials photo">
                     </div>
                     <div class="specials__text">
-                        <h6 class="specials__text--tittle">Yarrow sweet</h6>
+                        <h6 class="specials__text--title">Yarrow sweet</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">5$</p>
                     </div>
@@ -105,14 +103,14 @@
         <section class="page-main__about">
             <div class="about__wrapper">
                 <div class="about__text">
-                    <h2 class="about__tittle tittle">About us</h2>
+                    <h2 class="about__title title">About us</h2>
                     <p class="about__description">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <img src="#" alt="Hand-written signature" class="about__signature">
                 </div>
             </div>
         </section>
         <section class="page-main__menu">
-            <h2 class="menu__tittle tittle">Menu</h2>
+            <h2 class="menu__title title">Menu</h2>
             <div class="menu__nav-list">
                 <input type="radio" id="menuLabel1" name="menu" value="starters">
                 <label for="menuLabel1">Starters</label>
@@ -202,7 +200,7 @@
         </section>
         <section class="page-main__contacts">
             <div class="contacts__wrapper">
-                <h2 class="contacts__tittle tittle">Contacts</h2>
+                <h2 class="contacts__title title">Contacts</h2>
                 <div class="contacts__text">
                     <div class="contacts__text--adress">
                         <h6>Veggie</h6>
@@ -217,7 +215,7 @@
                 </div>
             </div>
             <form id="contactsForm" action="mailto:contacts@veggie.com" class="contacts__form">
-                <h3 class="form__tittle">Contact</h3>
+                <h3 class="form__title">Contact</h3>
                 <div class="form__wrapper">
                     <div class="form__item form__item--name">
                         <input id="name" class="form__field" type="text" name="user" placeholder="Name" required>
