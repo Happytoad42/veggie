@@ -1,6 +1,4 @@
 .page-main__features
-	// Temporary for test purposes
-	border: 1px solid green
 	width: 100vw
 	height: 385px
 	background-image: url("../img/features-bg.jpg")
@@ -10,9 +8,8 @@
 	
 .features__list
 	height: 100%
-	width: 100%
-	// Temporary for test purposes	
-	border: 1px solid red
+	width: 80%
+	margin-left: 10%
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -20,8 +17,50 @@
 	display: flex
 	align-items: center
 	justify-content: space-around
+	
+@media (max-width: 950px)
+	.page-main__features
+		height: auto
+
+	.features__list
+		width: 100%
+		margin-left: 0
+		border: 1px solid red
+		flex-direction: column
+	
+	.features__item
+		min-width: 80%
+		min-height: 250px		
+		border: 1px dotted blue
+		margin-bottom: 7%
+	
+	.features__item:nth-of-type(1)
+		margin-top: 7%
+		
 
 .features__item
-	height: 230px
+	height: 65%
 	width: 25%
-	border: 1px dotted blue
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+
+	
+.features__title
+	text-transform: uppercase
+	font-family: "Merriweather", Arial, sans-serif
+	font-weight: bold
+	font-size: 18px
+
+.features__text
+	font-family: "Merriweather", Arial, sans-serif
+	font-weight: lighter
+	font-size: 16px
+	line-height: 26px
+	text-align: center
+

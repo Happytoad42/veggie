@@ -1,24 +1,30 @@
 .page-header
 	box-sizing: border-box
 	width: 100vw
-	height: 100vh
+	height: 965px
 	background-image: url("../img/hero-image.jpg")
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
-	border: 1px solid red
+	border: 0.1px solid transparent
 		
 .main-nav
 	width: 100%
+	position: relative
 
 .main-header__title
+	position: absolute
+	top: 420px
+	right: 10%
 	display: block
 	width: 530px
 	height: auto
-	margin-left: 60%
-	margin-top: 13%
+
 	
 .main-nav__list
+	position: absolute
+	top: 50px
+	right: 10%
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -27,13 +33,13 @@
 	justify-content: space-around
 	align-items: center
 	width: 590px
-	height: 50px
-	margin-left: 60%
-	margin-top: 3%
 	font-family: "Merriweather", Arial, sans-serif
 	font-size: 18px
 	
 .main-nav__item	
+	box-sizing: border-box
+	border: 1px solid transparent
+	transition: border 0.5s
 	width: 100px
 	height: 50px
 	display: -webkit-flex
@@ -44,15 +50,73 @@
 	justify-content: center
 	align-items: center
 	
-	&--active
+	&:hover,
+	&:focus
+		color: #000
 		border: 1px solid #3c3c3c
 	
+		
 .main-nav__link
 	text-decoration: none
-	color: #3c3c3c
-	
-	&:hover
+	color: #3c3c3c	
+	&:hover,
+	&:focus
 		color: #000
+	
+
+@media (max-width: 1200px)
+
+	.page-header
+		height: 520px
+
+	.main-header__title
+		position: absolute
+		top: 360px
+		right: 7%
+		display: block
+		width: 400px
+		height: auto
+		font-size: 28px
+		line-height: 35px
+	
+	.main-nav__list
+		flex-flow: column
+		top: 50px
+		right: 22%
+		justify-content: space-around
+		align-items: center
+		width: 200px
+		font-family: "Merriweather", Arial, sans-serif
+		font-size: 22px
+		font-weight: lighter
+		
+	.main-nav__item		
+		width: 150px		
+
+@media (max-width: 750px)
+	.page-header
+		height: 400px
+
+	.main-nav__list
+		flex-flow: column
+		top: 50px
+		right: 10%
+		justify-content: space-around
+		align-items: center
+		width: 200px
+		font-family: "Merriweather", Arial, sans-serif
+		font-size: 26px
+		font-weight: lighter
+			
+	.main-nav__item		
+		width: 130px
+
+	.main-header__title
+		display: none
+	
+
+			
+
 
 
 	
