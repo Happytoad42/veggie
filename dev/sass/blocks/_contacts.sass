@@ -1,0 +1,165 @@
+.page-main__contacts
+	position: relative
+	box-sizing: border-box
+	border: 1px dashed transparent
+	width: 100vw
+	height: 950px
+	background-image: url(../img/footer-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 0
+	
+	
+.contacts__wrapper
+	position: absolute
+	top: 100px
+	right: 10%
+	width: 580px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: column
+	justify-content: space-between
+	align-items: center
+	
+.contacts__text
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	font-family: "Merriweather", Arial, sans-serif
+	font-size: 16px
+	line-height: 24px
+	color: #4a4b4b
+	
+.contacts__text--adress,
+.contacts__text--res
+	width: 35%
+	margin-bottom: 95px
+	
+.contacts__text--adress h6,
+.contacts__text--res h6
+	font-family: "Merriweather", Arial, sans-serif
+	text-transform: uppercase
+	font-size: 18px
+	color: #4a4b4b
+	margin-bottom: 10px 
+	
+.contacts__title
+	margin-bottom: 130px
+	
+.contacts__form
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: column
+	justify-content: space-between
+	align-items: center
+	
+.form__title
+	align-self: flex-start
+	font-family: "Merriweather", Arial, sans-serif
+	text-transform: uppercase
+	font-size: 18px
+	color: #4a4b4b
+	margin-bottom: 45px
+
+.form__wrapper
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	
+.form__name,
+.form__email
+	width: 45%
+	margin-bottom: 65px
+
+.form__texarea
+	width: 100%
+	margin-bottom: 55px
+	
+
+input[type=text],
+input[type=email],
+textarea
+	box-sizing: border-box
+	border: none
+	background: none
+	border-bottom: 1px solid #3c3c3c
+	resize: none
+	font-family: "Merriweather", Arial, sans-serif	
+	font-size: 18px
+	font-style: italic
+	color: #4a4b4b
+	padding-left: 20px
+	padding-bottom: 5px
+	
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus
+	outline: none
+	border: 1px solid #3c3c3c
+	border-radius: 2px
+	
+@media (max-width: 1650px)
+	.page-main__contacts
+			background-position: -300px 0
+
+@media (max-width: 1300px)
+	.page-main__contacts
+		background-position: -600px 0
+		
+	.contacts__wrapper
+		width: 320px
+		right: 17%
+		
+	.contacts__text
+		flex-direction: column
+		div
+			width: 100%
+			margin-bottom: 30px
+		
+	.form__wrapper
+		flex-direction: column
+	
+	.form__name,
+	.form__email
+		width: 100%
+		margin-bottom: 45px
+		
+@media (max-width: 950px)
+	.page-main__contacts
+		background-position: -950px 0
+	
+	.form__title
+		align-self: center
+
+	.contacts__wrapper
+		left: 30%
+	
+	.contacts__text--adress,
+	.contacts__text--res
+		text-align: center
+		
+@media (max-width: 500px)
+	.page-main__contacts
+		background-position: -1000px 0
+		
+	.contacts__wrapper
+		left: 6%
+
+	
+		
