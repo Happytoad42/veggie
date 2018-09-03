@@ -11,17 +11,17 @@
     <header class="page-header">
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Home</a></li>
-                <li class="main-nav__item main-nav__item"><a class="main-nav__link" href="#">Specials</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Menu</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Home</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#specials">Specials</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#about">About</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#menu">Menu</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Contact</a></li>
             </ul>
         </nav>
         <h1 class="main-header__title title">Veggies es bonus vobis,<br> proinde vos postulo essum.</h1>
     </header>
     <main class="page-main">
-        <section class="page-main__features">
+        <section id="features" class="page-main__features">
             <h2 class="visually-hidden">Our features</h2>
             <ul class="features__list">
                 <li class="features__item features__item--turnip">
@@ -45,77 +45,65 @@
             <h2 class="specials__title title">This month specials</h2>
             <ul class="specials__list">
                 <li class="specials__item">
-                    <div class="specials__image">
-                        <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
+                    <img src="../img/greensfava.jpg" alt="Specials photo">
                     <div class="specials__text">
                         <h6 class="specials__text--title">Greens fava</h6>
                         <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
                         <p class="specials__text--price">17$</p>
                     </div>
-                </li>
-                <li class="specials__item">
-                    <div class="specials__image">
+                    <li class="specials__item">
                         <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
-                    <div class="specials__text">
-                        <h6 class="specials__text--title">Celery quandong</h6>
-                        <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
-                        <p class="specials__text--price">30$</p>
-                    </div>
-                </li>
-                <li class="specials__item">
-                    <div class="specials__image">
-                        <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
-                    <div class="specials__text">
-                        <h6 class="specials__text--title">Pea horseradish</h6>
-                        <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
-                        <p class="specials__text--price">25$</p>
-                    </div>
-                </li>
-                <li class="specials__item specials__item--flipped">
-                    <div class="specials__image">
-                        <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
-                    <div class="specials__text">
-                        <h6 class="specials__text--title">Soko radicchio</h6>
-                        <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
-                        <p class="specials__text--price">7$</p>
-                    </div>
-                </li>
-                <li class="specials__item specials__item--flipped">
-                    <div class="specials__image">
-                        <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
-                    <div class="specials__text">
-                        <h6 class="specials__text--title">Tigernut</h6>
-                        <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
-                        <p class="specials__text--price">3$</p>
-                    </div>
-                </li>
-                <li class="specials__item specials__item--flipped">
-                    <div class="specials__image">
-                        <img src="../img/food.jpg" alt="Specials photo">
-                    </div>
-                    <div class="specials__text">
-                        <h6 class="specials__text--title">Yarrow sweet</h6>
-                        <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
-                        <p class="specials__text--price">5$</p>
-                    </div>
-                </li>
+                        <div class="specials__text">
+                            <h6 class="specials__text--title">Celery quandong</h6>
+                            <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+                            <p class="specials__text--price">30$</p>
+                        </div>
+                    </li>
+                    <li class="specials__item">
+                        <img src="../img/quandong.jpg" alt="Specials photo">
+                        <div class="specials__text">
+                            <h6 class="specials__text--title">Pea horseradish</h6>
+                            <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+                            <p class="specials__text--price">25$</p>
+                        </div>
+                    </li>
+                    <li class="specials__item">
+                        <img src="../img/soko.jpg" alt="Specials photo">
+                        <div class="specials__text">
+                            <h6 class="specials__text--title">Soko radicchio</h6>
+                            <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+                            <p class="specials__text--price">7$</p>
+                        </div>
+                    </li>
+                    <li class="specials__item">
+                        <img src="../img/donut.jpg" alt="Specials photo">
+                        <div class="specials__text">
+                            <h6 class="specials__text--title">Tigernut</h6>
+                            <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+                            <p class="specials__text--price">3$</p>
+                        </div>
+                    </li>
+                    <li class="specials__item">
+                        <img src="../img/melonjuice.jpg" alt="Specials photo">
+                        <div class="specials__text">
+                            <h6 class="specials__text--title">Yarrow sweet</h6>
+                            <p class="specials__text--description">Lorem ipsum dolor Pellentesque vel enim a</p>
+                            <p class="specials__text--price">5$</p>
+                        </div>
+                    </li>
             </ul>
         </section>
-        <section class="page-main__about">
-            <div class="about__wrapper">
-                <div class="about__text">
-                    <h2 class="about__title title">About us</h2>
-                    <p class="about__description">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-                    <img src="#" alt="Hand-written signature" class="about__signature">
+        <section id="about" class="page-main__about">
+            <div class="about__text">
+                <h2 class="about__title title">About us</h2>
+                <p class="about__description">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
+                    <br> Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                <div class="about__signature">
+                    <object type="image/svg+xml" data="../img/svg/signature.svg">Your browser does not support SVG's</object>
                 </div>
             </div>
         </section>
-        <section class="page-main__menu">
+        <section id="menu" class="page-main__menu">
             <h2 class="menu__title title">Menu</h2>
             <div class="menu__nav-list">
                 <input type="radio" id="menuLabel1" name="menu" value="starters">
@@ -204,7 +192,7 @@
                 </ul>
             </div>
         </section>
-        <section class="page-main__contacts">
+        <section id="contacts" class="page-main__contacts">
             <div class="contacts__wrapper">
                 <h2 class="contacts__title title">Contact</h2>
                 <div class="contacts__text">
@@ -221,32 +209,28 @@
                 </div>
                 <form id="contactsForm" action="mailto:contacts@veggie.com" class="contacts__form">
                     <h3 class="form__title">Contact form</h3>
-                    <div class="form__wrapper">                       
-                            <input id="name" class="form__name" type="text" name="user" placeholder="Name" required>
-                            <input id="email" class="form__email" type="email" name="email" placeholder="Email" required>
+                    <div class="form__wrapper">
+                        <input id="name" class="form__name" type="text" name="user" placeholder="Name" required>
+                        <input id="email" class="form__email" type="email" name="email" placeholder="Email" required>
                     </div>
-                        <textarea id="textarea" class="form__texarea" rows="1" placeholder="Message" required></textarea>
+                    <textarea id="textarea" class="form__texarea" rows="1" placeholder="Message" required></textarea>
                     <button id="submit" class="button button__submit" type="submit">Send</button>
                 </form>
             </div>
-        </section>
-    </main>
-    <footer class="page-main__footer">
-        <div class="footer__social">
-            <ul class="social__list">
+            <ul class="contacts__social social__list">
                 <li class="social__link">
                     <a class="social__link social__link--instagram" href="#">
-                        <img src="#" alt="instagram">
+                        <object class="social__icon social__icon--ig" type="image/svg+xml" data="../img/svg/ig.svg">Your browser does not support SVG's</object>
                     </a>
                 </li>
                 <li class="social__link">
                     <a class="social__link social__link--facebook" href="#">
-                       <img src="#" alt="Facebook">
+                        <object class="social__icon social__icon--fb" type="image/svg+xml" data="../img/svg/fb.svg">Your browser does not support SVG's</object>
                     </a>
                 </li>
             </ul>
-        </div>
-    </footer>
+        </section>
+    </main>
 </body>
 
 </html>

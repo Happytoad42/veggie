@@ -65,6 +65,48 @@
 	justify-content: space-between
 	align-items: center
 	
+.contacts__social
+	width: 115px
+	height: auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: absolute
+	bottom: 40px
+	right: 10%
+	
+.social__link
+	width: 50px
+	height: 50px
+	border: 1px solid #4a4b4b
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	&:hover
+		border: 1px solid #000
+		box-shadow: 0 0 3px #3c3c3c
+		transition: box-shadow 0.3s
+
+.social__icon
+	cursor: pointer
+
+.social__icon--ig 
+	width: 25px
+	height: 26px
+
+
+.social__icon--fb
+	width: 11px
+	height: 23px
+	
 .form__title
 	align-self: flex-start
 	font-family: "Merriweather", Arial, sans-serif
@@ -99,22 +141,23 @@ textarea
 	border: none
 	background: none
 	border-bottom: 1px solid #3c3c3c
-	resize: none
+	height: 35px
 	font-family: "Merriweather", Arial, sans-serif	
 	font-size: 18px
+	line-height: 24px
 	font-style: italic
 	color: #4a4b4b
+	resize: none
 	padding-left: 20px
 	padding-bottom: 5px
+	&:hover
+		border-top: 1px solid #c8c3c3
+	&:focus
+		outline: none
+		border-top: 1px solid #c8c3c3
+		border-radius: 2px
 	
-input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus
-	outline: none
-	border: 1px solid #3c3c3c
-	border-radius: 2px
-	
-@media (max-width: 1650px)
+@media (max-width: 1600px)
 	.page-main__contacts
 			background-position: -300px 0
 

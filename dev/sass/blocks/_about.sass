@@ -1,9 +1,5 @@
 .page-main__about
 	border: 1px solid red
-	
-
-.about__wrapper
-	border: 1px dashed orange
 	width: 100%
 	height: 970px
 	background-image: url("../img/bowl-bg.jpg")
@@ -20,6 +16,55 @@
 	display: -o-flex
 	display: flex
 	flex-flow: column
-	text-align: center
 	justify-content: center
+	align-items: center
+	
+.about__signature
+	width: 213px
+	height: 144px
+	
+.about__title
+	margin-bottom: 125px
+	
+.about__description
+	width: 75%
+	font-family: "Merriweather", Arial, sans-serif
+	font-weight: lighter
+	color: #3c3c3c
+	font-size: 30px
+	line-height: 54px
+	text-align: center
+	margin-bottom: 55px
+	
+.about__signature
+	align-self: flex-end
+	margin-right: 18%
+	
+@media (max-width: 960px)
+	.page-main__about
+		background-position: -350px 0
+	.about__text
+		width: 80%
+		margin-left: 5%
+		
+@media (max-width: 500px)
+	.page-main__about
+		background-position: -600px 0
+	.about__text
+		width: 90%
+		margin-left: 5%
+		margin-right: 5%
+	
+	.about__description
+		width: 90%
+		font-size: 28px
+		line-height: 42px
+		text-align: center
+		margin-bottom: 55px
+	
+
+	
+
+	
+
 

@@ -1,15 +1,10 @@
 .page-main__specials
-	// Temporary for test purposes
-	box-sizing: border-box
-	border: 1px solid black
-	
-	height: 840px
+	min-height: 840px
 	
 .specials__title
 	margin-top: 80px
 
 .specials__list
-	border: 1px dotted red
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -17,28 +12,109 @@
 	display: flex
 	flex-wrap: wrap
 	width: 80%
+	height: auto
 	margin-left: 10%
 	margin-top: 120px
+	margin-bottom: 80px
 	
 .specials__item
 	box-sizing: border-box
-	border: 1px solid black
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
-	width: 33%
+	flex: 33%
+	min-width: 33%
 	min-width: 250px
 	height: 50%
 	
-.specials__image
-	width: 50%
-	
-	
 .specials__text
-	width: 50%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: column
+	justify-content: center
+	align-items: center
 	background-color: #f8f8f8
+	font-family: "Merriweather", Arial, sans-serif
+	font-weight: bold
+	font-size: 18px
+	line-height: 26px
+	&--title
+		position: relative
+		margin-bottom: 25px
+		
+.specials__text--title:before
+	display: block
+	position: absolute
+	top: 40px
+	left: 50%
+	transform: translate(-50%, -50%)
+	content: ""
+	width: 90px
+	height: 0.1em
+	background-color: #000
+
+.specials__text--description
+	width: 80%
+	text-align: center
+	font-size: 16px
+	font-weight: lighter
+	margin-bottom: 0.5em
+	
+
+@media (min-width: 1501px)
+	.specials__item:nth-of-type(n+4)
+		flex-flow: row-reverse
+	
+@media (max-width: 1500px) and (min-width: 1001px)
+	.specials__item
+		flex: 50%
+		max-width: 50%
+		
+	.specials__item:nth-of-type(n+3)
+		flex-flow: row-reverse
+	.specials__item:nth-of-type(n+5)	
+		flex-flow: row
+
+@media (max-width: 1000px) and (min-width: 751px)
+	.specials__list
+		width: 60%
+		margin-left: 20%
+	.specials__item
+		flex: 100%
+		max-width: 100%
+		
+	.specials__item:nth-of-type(2n)
+		flex-flow: row-reverse
+		
+@media (max-width: 750px) 
+	.specials__item
+		flex: 100%
+		max-width: 100%
+	.specials__list
+		width: 90%
+		margin-left: 5%
+		margin-right: 5%
+		
+@media (max-width: 500px)
+	.specials__list
+		max-width: 250px
+		margin-left: 12%
+		margin-right: 12%
+	.specials__item
+		flex-flow: column
+	
+.specials__item img
+	flex: 50%
+	min-width: 253px
+	max-width: 250px
+	
+	
+
 
 	
 	
