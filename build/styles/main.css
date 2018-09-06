@@ -282,6 +282,7 @@ table {
   margin-top: 80px; }
 
 .specials__list {
+  background-color: #f8f8f8;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -302,8 +303,7 @@ table {
   flex: 33%;
   min-width: 33%;
   min-width: 250px;
-  height: 50%;
-  background-color: #f8f8f8; }
+  height: 50%; }
 
 .specials__text {
   display: -moz-flex;
