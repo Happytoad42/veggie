@@ -91,8 +91,8 @@
 	justify-content: center
 	align-items: center
 	&:hover
-		border: 1px solid #000
-		box-shadow: 0 0 3px #3c3c3c
+		border: 1px solid #3c3c3c
+		box-shadow: 0 0 1px #3c3c3c
 		transition: box-shadow 0.3s
 
 .social__icon
@@ -101,7 +101,6 @@
 .social__icon--ig 
 	width: 25px
 	height: 26px
-
 
 .social__icon--fb
 	width: 11px
@@ -131,6 +130,7 @@
 
 .form__texarea
 	width: 100%
+	height: 2em
 	margin-bottom: 55px
 	
 
@@ -148,6 +148,7 @@ textarea
 	font-style: italic
 	color: #4a4b4b
 	resize: none
+	outline: none
 	padding-left: 20px
 	padding-bottom: 5px
 	&:hover
@@ -156,6 +157,8 @@ textarea
 		outline: none
 		border-top: 1px solid #c8c3c3
 		border-radius: 2px
+	&:required
+		box-shadow: none
 	
 @media (max-width: 1600px)
 	.page-main__contacts
@@ -202,7 +205,10 @@ textarea
 		background-position: -1000px 0
 		
 	.contacts__wrapper
+		top: 5%
 		left: 6%
+
+	
 
 	
 		

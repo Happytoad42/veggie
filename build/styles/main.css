@@ -59,7 +59,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -403,6 +404,8 @@ table {
   align-items: center; }
 
 .about__signature {
+  align-self: flex-end;
+  margin-right: 18%;
   width: 213px;
   height: 144px; }
 
@@ -418,10 +421,6 @@ table {
   line-height: 54px;
   text-align: center;
   margin-bottom: 55px; }
-
-.about__signature {
-  align-self: flex-end;
-  margin-right: 18%; }
 
 @media (max-width: 960px) {
   .page-main__about {
@@ -531,39 +530,6 @@ table {
   width: 100%;
   height: auto;
   margin-bottom: 45px; }
-
-.dish__wrapper {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  width: 100%; }
-
-.dish__name,
-.dish__price {
-  text-transform: uppercase;
-  font-family: "Merriweather", Arial, sans-serif;
-  color: #3c3c3c;
-  font-size: 18px;
-  font-weight: lighter;
-  letter-spacing: -1px;
-  margin-right: 12px; }
-
-.dish__price {
-  margin-right: 0; }
-
-.dish__ingridients {
-  font-family: "Merriweather", Arial, sans-serif;
-  color: #3c3c3c;
-  font-size: 14px;
-  font-weight: lighter;
-  font-style: italic; }
-
-.dish__dots {
-  position: relative;
-  flex: 2;
-  border-bottom: 2px dotted #3c3c3c;
-  margin-bottom: 0.2em; }
 
 #menu1:checked ~ .menu__slider > .menu__starters,
 #menu2:checked ~ .menu__slider > .menu__maindishes,
@@ -686,7 +652,7 @@ table {
   justify-content: center;
   align-items: center; }
   .social__link:hover {
-    border: 0.1em solid #000;
+    border: 1px solid #3c3c3c;
     box-shadow: 0 0 1px #3c3c3c;
     transition: box-shadow 0.3s; }
 
@@ -798,3 +764,36 @@ textarea {
   .contacts__wrapper {
     top: 5%;
     left: 6%; } }
+
+.dish__wrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%; }
+
+.dish__name,
+.dish__price {
+  text-transform: uppercase;
+  font-family: "Merriweather", Arial, sans-serif;
+  color: #3c3c3c;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: -1px;
+  margin-right: 12px; }
+
+.dish__price {
+  margin-right: 0; }
+
+.dish__ingridients {
+  font-family: "Merriweather", Arial, sans-serif;
+  color: #3c3c3c;
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic; }
+
+.dish__dots {
+  position: relative;
+  flex: 2;
+  border-bottom: 2px dotted #3c3c3c;
+  margin-bottom: 0.2em; }

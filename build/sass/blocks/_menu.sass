@@ -1,9 +1,5 @@
 .page-main__menu
-	border: 1px solid blue
-	
-	height: 965px
-	background-color: #fff
-	
+	height: auto
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -14,31 +10,128 @@
 	align-items: center
 	
 .menu__nav-list
-	border: 1px dotted green
-	
-.menu__wrapper
-	border: 1px solid red
+	box-sizing: border-box
+	position: relative
+	height: 50px
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
 	justify-content: space-between
-	min-width: 1500px
-	height: auto
+	align-items: center
+	margin-top: 120px
 	
+.menu__radio
+	visibility: hidden		
+	
+.menu__item
+	box-sizing: border-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100%
+	min-width: 130px
+	padding: 0 10px
+	margin-right: 20px
+	font-family: "Merriweather", Arial, sans-serif
+	color: #3c3c3c
+	font-size: 18px
+	line-height: 24px
+	border: 1px solid transparent
+	transition: border 0.3s
+	
+.menu__item:hover,
+.menu__item:active,
+	border: 1px solid #707070
+	color: #000
+
+.menu__item:last-of-type
+	margin-right: 0
+	
+.menu__radio:checked + .menu__item
+	border: 1px solid #707070
+	color: #000
+	
+.menu__slider
+	position: relative
+	width: 80%
+	height: 550px
+	margin: 85px 10% 
+
+.menu__wrapper
+	z-index: 0
+	opacity: 0
+	transition: opacity 0.7s
+	position: absolute
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	width: 100%
+	height: inherit
+		
 .menu__column
-	border: 1px dashed blue
 	width: 44%
+	&:last-child
+		margin-bottom: 0
 	
 .menu__title
 	margin-top: 70px
 	
-.menu__nav-list
-	margin-top: 120px
+.menu__dish
+	width: 100%
+	height: auto
+	margin-bottom: 45px
+	
+#menu1:checked ~ .menu__slider > .menu__starters,
+#menu2:checked ~ .menu__slider > .menu__maindishes,
+#menu3:checked ~ .menu__slider > .menu__deserts,
+#menu4:checked ~ .menu__slider > .menu__drinks
+	opacity: 1
 
-.menu__wrapper
-	margin-top: 85px
+
+@media (max-width: 975px)
+	.page-main__menu
+		height: 1700px
+		
+	.menu__slider
+		width: 80%
+		height: auto
+		margin: 155px 50% 50px 50%
+		
+	.menu__wrapper
+		flex-flow: column	
+		justify-content: space-between
+		
+	.menu__item
+		margin-bottom: 15px
+	.menu__nav-list
+		margin-top: 50px 
+			
+	.menu__column
+		width: 100%
+		
+@media (max-width: 750px)
+	.page-main__menu
+		height: 1900px
+	.menu__nav-list
+		flex-flow: column
+		align-items: center
+		margin-bottom: 100px
+		
+	.menu__item
+		min-height: 50px
+		margin-right: 0
+		
+
+
 	
 	
 
