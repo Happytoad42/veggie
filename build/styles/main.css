@@ -302,7 +302,8 @@ table {
   flex: 33%;
   min-width: 33%;
   min-width: 250px;
-  height: 50%; }
+  height: 50%;
+  background-color: #f8f8f8; }
 
 .specials__text {
   display: -moz-flex;
@@ -312,7 +313,6 @@ table {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8;
   font-family: "Merriweather", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
