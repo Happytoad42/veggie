@@ -1,2 +1,2 @@
 # veggie
-Simple adaptive website
+Simple adaptive website (Gulp + SASS)
