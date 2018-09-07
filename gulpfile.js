@@ -14,6 +14,8 @@ var del = require("del");
 var run = require("gulp-run");
 var server = require("browser-sync").create();
  
+
+// Компиляция и минификация препроцессорных файлов
 gulp.task("style", function () {
 		gulp.src("dev/sass/**/*.sass")
 		.pipe(plumber())
@@ -28,6 +30,8 @@ gulp.task("style", function () {
 		.pipe(server.stream());
 });
 
+// CSS линтер. Проверь себя!
+
 gulp.task("lint-css", function lintCssTask () {
 	return gulp.src("./build/styles/*.css")
 		.pipe(gulpStylelint({
@@ -38,18 +42,21 @@ gulp.task("lint-css", function lintCssTask () {
 
 });
 
+// Запускаем локальный сервер browsersync
 gulp.task("serve", function () {
 	server.init({
 		server: "./",
 		port: 3000 
 	});
 
+// При изменений файлов, обновляем страницу
 	gulp.watch("dev/sass/**/*.sass", ["style"]);
 	gulp.watch("*.html", ["html"])
 		.on("change", server.reload);
 
 });
 
+// Минификация картинок
 gulp.task("images", function() {
 	return gulp.src("dev/img/**/*.{png, jpg, svg}")
 		.pipe(imagemin([
@@ -60,18 +67,21 @@ gulp.task("images", function() {
 		.pipe(gulp.dest("./build/img"));
 });
 
+// Переводим картинки в webp
 gulp.task("webp", function() {
-	return gulp.src("dev/img/**/*.{png, jpg}")
+	return gulp.src("./dev/img/**/*.{png, jpg}")
 		.pipe(webp({quality: 90}))
 		.pipe(gulp.dest("./build/img"));
 });
 
+// Прогоняем HTML через постпроцессор
 gulp.task("html", function() {
 	return gulp.src("dev/*.html")
 		.pipe(posthtml())
 		.pipe(gulp.dest("./"));
 });
 
+// Копируем файлы в build
 gulp.task("copy", function() {
 	return gulp.src([
 		"dev/fonts/**/*",
@@ -84,10 +94,12 @@ gulp.task("copy", function() {
 		.pipe(gulp.dest("./build"));
 });
 
+// Очищаем build
 gulp.task("clean", function() {
 	return del("./build");
 });
 
+// Запускаем таски последовательно
 gulp.task("build", function (done) {
 	gulpSequence(
 		"clean",

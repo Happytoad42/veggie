@@ -1,3 +1,5 @@
+// Прячем объекты семантично
+
 .visually-hidden
 	position: absolute
 	z-index: -1
@@ -8,6 +10,8 @@
 	border: none
 	overflow: hidden
 	
+// Общие стили для заголовков	
+	
 .title 
 	position: relative
 	font-family: "Merriweather", Arial, sans-serif
@@ -17,7 +21,8 @@
 	color: #4a4b4b
 	text-align: center
 	
-	
+// Сепаратор заголовков
+
 .title:before
 	background: url("../img/svg/separator.png") no-repeat center bottom
 	content: ""
@@ -29,6 +34,9 @@
 	left: 50%
 	transform: translate(-50%, -50%)
 	
+
+// Общие стили для кнопок. Кнопки.
+
 .button
 	width: 100px
 	height: 50px
@@ -51,6 +59,8 @@
 	border: 1px solid #000
 	color: #000
 	
+// Фикс для Firefox, изменяем курсор при наведении на иконку.
+
 object
     pointer-events: none
 
