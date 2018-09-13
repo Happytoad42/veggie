@@ -50,7 +50,7 @@ gulp.task("serve", function () {
 	});
 
 // При изменений файлов, обновляем страницу
-	gulp.watch("dev/sass/**/*.sass", ["style"]);
+	gulp.watch("dev/sass/**/*", ["style"]);
 	gulp.watch("*.html", ["html"])
 		.on("change", server.reload);
 
@@ -74,12 +74,7 @@ gulp.task("webp", function() {
 		.pipe(gulp.dest("./build/img"));
 });
 
-// Прогоняем HTML через постпроцессор
-gulp.task("html", function() {
-	return gulp.src("dev/*.html")
-		.pipe(posthtml())
-		.pipe(gulp.dest("./"));
-});
+
 
 // Копируем файлы в build
 gulp.task("copy", function() {
@@ -105,7 +100,6 @@ gulp.task("build", function (done) {
 		"clean",
 		"copy",
 		"style",
-		"html",
 		"images",
 		done
 		)

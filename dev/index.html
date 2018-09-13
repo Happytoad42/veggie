@@ -12,6 +12,7 @@
     <link rel="mask-icon" href="build/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 </head>
 
 <body>
@@ -580,6 +581,43 @@
             </ul>
         </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Выбираем все ссылки по ID
+    $('a[href*="#"]')
+      // Исключаем ссылки, не требующие анимации
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // Указываем ссылки на странице
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+          && 
+          location.hostname == this.hostname
+        ) {
+          // Определяем куда скролить
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Проверка на существование цели скрола
+          if (target.length) {
+            // Prevent default только если анимация происходит
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Коллбэк
+              var $target = $(target);
+              if ($target.is(":focus")) { // Проверка на фокус
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Для элементов без фокуса
+              };
+            });
+          }
+        }
+      });
+    </script>
+
 </body>
 
 </html>
